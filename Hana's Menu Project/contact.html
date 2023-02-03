@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Hana" />
+    <meta name="description" content="Contact Us website for hana caffteria" />
+    <title>Contact Us</title>
+    <link rel="icon" href="icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li>
+            <a href="/#about"> About <abbr title="Hana Caffteria">HC</abbr></a>
+          </li>
+          <li><a href="/#menu"> Our Menu</a></li>
+          <li><a href="time.html">Contact Us</a></li>
+        </ul>
+        <figure>
+          <img
+            src="img/plate.JPG"
+            title="plate of food"
+            alt="plate of food"
+            width="300"
+            height="200"
+          />
+          <figcaption>Plate of food</figcaption>
+        </figure>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+          <legend>Your Information</legend>
+          <label for="fname">First Name:</label>
+          <input
+            id="fname"
+            type="text"
+            name="Fname"
+            value=""
+            required
+            placeholder="Your Name"
+          />
+          <label for="lname">Last Name:</label>
+          <input
+            type="text"
+            id="lname"
+            name="Lname"
+            value=""
+            required
+            placeholder="last Name"
+          />
+          <label for="pass">Last Name:</label>
+          <input type="text" id="pass" name="password" value="" required />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value=""
+            required
+            placeholder="abc@gmail.com"
+          />
+        </fieldset>
+        <fieldset>
+          <legend>Your Comment</legend>
+          <label for="com">YOUR COMMENT</label>
+          <br />
+          <textarea
+            cols="40"
+            rows="30"
+            id="com"
+            name="comment"
+            placeholder="Type your comment!"
+          >
+your comment</textarea
+          >
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </main>
+    <hr />
+    <footer>
+      <p>Copy right &copy; Hana Caffteria</p>
+    </footer>
+  </body>
+</html>

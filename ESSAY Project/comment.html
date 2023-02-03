@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+                   initial-scale=1,
+                   maximum-scale=1"
+    />
+    <meta
+      name="description"
+      content="This is a website about Essay you can contact us for more."
+    />
+    <meta
+      name="keywords"
+      content="first,page,conflict, affect of conflict, leadership"
+    />
+    <!--<meta http-equiv="content-language" content="en" />-->
+    <title>my first web</title>
+    <link rel="icon" href="html.JPG" type="image/x-icon" />
+  </head>
+  <body>
+    <form action="https://httpbin.org/get" method="get">
+      <fieldset>
+        <legend>personal information</legend>
+        <label for="firstname">First Name:</label><br />
+        <input
+          type="text"
+          id="firstname"
+          name="fname"
+          placeholder="Hana"
+          required
+          autocomplete="on"
+        />
+        <br />
+        <label for="lastname">Last Name:</label><br />
+        <input
+          type="text"
+          id="lastname"
+          name="lname"
+          placeholder="Mengist"
+          required
+          autocapitalize="on"
+        />
+        <br />
+        <label for="email">Email:</label><br />
+        <input type="text" id="email" name="email" required aria-busy="true" />
+        <br />
+        <label for="pass">password:</label><br />
+        <input type="password" id="pass" required name="password" />
+        <br />
+        <label for="tel">phone no.</label><br />
+        <input
+          type="tel"
+          id="tel"
+          name="tel"
+          placeholder="555-555-555"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+        />
+        <br />
+        <p>
+          <label for="country">Country</label>
+          <input type="text" list="countrys" id="country" name="country" />
+          <datalist id="countrys">
+            <option value="Angola"></option>
+            <option value="Argentina"></option>
+            <option value="Austria"></option>
+            <option value="Belgium"></option>
+            <option value="Burundi"></option>
+            <option value="Canada"></option>
+            <option value="Cameron"></option>
+            <option value="Congo"></option>
+            <option value="Ethiopia"></option>
+            <option value="India"></option>
+            <option value="US"></option>
+            <option value="others"></option>
+          </datalist>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>comment section</legend>
+        <label for="com">comment:</label>
+        <br />
+        <textarea
+          placeholder="write your comment"
+          id="com"
+          name="com"
+          rows="10"
+          cols="40"
+        ></textarea>
+      </fieldset>
+      <fieldset>
+        <p>did you satisfied:</p>
+        <br />
+        <label for="yes">Yes:</label>
+        <input type="radio" name="yes or no" id="yes" value="" /> <br />
+        <p>
+          <label for="no">No:</label>
+          <input type="radio" name="yes or no" id="no" value="" />
+        </p>
+        <p>
+          <label for="can't">can't say it</label>
+          <input type="radio" name="yes or no" id="can't" value="" />
+        </p>
+
+        <p>which part did you like most:</p>
+        <br />
+        <input type="checkbox" name="def" id="def" value="" />
+        <label for="def">DEFINATION</label><br />
+        <input type="checkbox" name="types" />TYPES<br />
+        <input type="checkbox" name="management" />MANAGEMENT<br />
+
+        describe your level of satisfaction from 1 to 10: <br />
+        <input type="number" min="0" max="10" value="5" step="2" /><br />
+      </fieldset>
+      <section>
+        <fieldset>
+          <legend>suggustion for next essay</legend>
+          <label for="next">Next essay:</label>
+          <select name="next" id="next">
+            <option value="">general essay</option>
+            <option value="">educational essay</option>
+          </select>
+
+          <p></p>
+          <h3>
+            next select specfic essay from the essay that you selected above:
+          </h3>
+          <p>
+            <label for="sep">specfic essay:</label>
+            <br />
+            <select id="sep" name="sep" multiple size="5">
+              <optgroup label="general essay">
+                <option value="" selected>leadership</option>
+                <option value="">community</option>
+                <option value="">cultural affect</option>
+              </optgroup>
+              <optgroup label="educational essay">
+                <option value="">earth</option>
+                <option value="">water</option>
+                <option value="">calculus</option>
+              </optgroup>
+              <option value="">others</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <aside>
+          <p>one last Question</p>
+          <details>
+            <summary><mark>you want me to continue?</mark></summary>
+            <input type="radio" name="yes or no" value="" />
+            Yes:
+            <br />
+            <input type="radio" name="yes or no" value="" />
+            No:
+          </details>
+        </aside>
+      </section>
+      <button type="submit">Submit</button>
+      <button
+        type="submit"
+        formaction="https://httpbin.org/post"
+        formmethod="post"
+      >
+        Post
+      </button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+#left{
+    float:left;
+    color: rgb(63, 63, 240);
+}
+#add{
+float:right;
+width:20%;
+}
+#sum{
+    text-align: left;
+    color: rgb(63, 63, 240);
+    width:40px;
+}
+#edu{
+    text-align: left;
+    color: rgb(63, 63, 240);
+}
+#skill{
+    text-align: left;
+    color: rgb(63, 63, 240);  
+}
+
+
+#le{
+   float:left;
+ 
+}
+#ri{
+    float:right;
+    width: 43.33%;
+   
+}
+#cer{
+    text-align: left;
+color: rgb(63, 63, 240);
+width: 30%; 
+}
+#lang{
+    text-align: left;
+    color: rgb(63, 63, 240);   
+}
+#int{
+    text-align: left;
+    color: rgb(63, 63, 240);   
+}
